@@ -1,17 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-
-import Product from "./Product2"
-import Product2 from './Product2';
-import MyComponent from './MyComponent';
-import ParentCardLayout from './ParentCardLayout'
+import Average from './Average';
+import Parent from './parent child/Parent';
 import Counter from './Counter';
-import InputSample from './InputSample';
-import InputMultipleSample from './InputMultipleSample';
-import CounterRef from './ref/CounterRef';
-import InputRef from './ref/InputRef';
-import UserProfile from './profile/UserProfile';
-import Form from './form/Form';
+import BookList from './Booklist';
 
 function App() {
   return (
@@ -23,9 +15,17 @@ function App() {
       {/* <InputSample /> */}
       {/* <InputMultipleSample /> */}
       {/* <CounterRef /> */}
+      {/* <Counter /> */}
       {/* <InputRef /> */}
       {/* <UserProfile /> */}
-      <Form />
+      {/* <Form /> */}
+      {/* <Life /> */}
+      {/* <FetchBook /> */}
+      {/* <Reducer /> */}
+      {/* <Memo /> */}
+      {/* <Average /> */}
+      {/* <Parent /> */}
+      <BookList />
     </>
 
   );

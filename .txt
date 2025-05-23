@@ -8,7 +8,13 @@ react 개발환경 가져오기
   yarn --version(버전확인)
 
   yarn add 패키지명
+
   yarn add tailwindcss @tailwindcss/vite
+  
+  yarn add react-icons
+
+  yarn add axios
+
 
 
  3.extension 설치
