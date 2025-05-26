@@ -1,15 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import './App.css'
-import TodoTemplate from './TodoTemplate'
+import TodoTemplate from './components/TodoTemplate'
+import TodoInsert from './components/TodoInsert'
+import TodoList from './components/TodoList'
+import { getList, remoceTodo } from './common/todoApi'
+import Navbar from '../../route/src/components/Navbar'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <TodoTemplate>Todo App</TodoTemplate>
+      <Navbar />
     </>
   )
 }

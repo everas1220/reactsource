@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TodoTemplate = () => {
+const User = () => {
     return (
         <div>
 
@@ -8,4 +8,4 @@ const TodoTemplate = () => {
     );
 };
 
-export default TodoTemplate;
+export default User;
