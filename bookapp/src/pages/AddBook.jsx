@@ -1,13 +1,26 @@
-import React from 'react';
-import BookForm from '../components/BookForm';
+import React from "react";
+import BookForm from "../components/BookForm";
+import { postBook } from "../api/bookApi";
+import { useNavigate } from "react-router-dom";
 
 const AddBook = () => {
-    return (
-        <div>
-            <h1 className="text-[32px]">Add New Book</h1>
-            <BookForm />
-        </div>
-    );
+
+  const navigate = useNavigate();
+
+  const onSubmit = (bookData) => {
+    postBook(bookData).then((data) => {
+      console.log("도서 추가", data);
+      navigate("/");
+    });
+  };
+
+
+  return (
+    <div>
+      <h1 className="text-[32px]">Add New Book</h1>
+      <BookForm onSubmit={onSubmit} />
+    </div>
+  );
 };
 
 export default AddBook;
